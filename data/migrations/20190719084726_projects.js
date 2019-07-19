@@ -18,7 +18,6 @@
                 tbl.increments()
                 tbl
                 .integer("project_id")
-                .notNullable()
                 .unsigned()
                 tbl
                 .string("description")
