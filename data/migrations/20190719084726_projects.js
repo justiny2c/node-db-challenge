@@ -20,6 +20,10 @@
                 .integer("project_id")
                 .unsigned()
                 .notNullable()
+                .references("id")
+                .inTable("projects")
+                .onDelete('RESTRICT')
+                .onUpdate('CASCADE')
                 tbl
                 .string("description")
                 .notNullable()

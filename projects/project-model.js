@@ -32,8 +32,8 @@ function addProject(project){
         .insert(project)
 }
 
-function addActionById(id, action){
+function addActionById(project_id, action){
     return db("actions")
-        .where({ project_id: id })
-        .insert(action)
+        .where({ project_id })
+        .insert( { ...action, project_id } )
 }
