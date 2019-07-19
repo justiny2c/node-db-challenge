@@ -19,6 +19,7 @@
                 tbl
                 .integer("project_id")
                 .unsigned()
+                .notNullable()
                 tbl
                 .string("description")
                 .notNullable()

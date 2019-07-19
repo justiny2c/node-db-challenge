@@ -5,7 +5,7 @@ module.exports = {
     getProjectById,
     getActions,
     addProject,
-    addActionById
+    addActionById,
 }
 
 function getProject() {
